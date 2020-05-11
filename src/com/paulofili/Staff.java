@@ -5,7 +5,10 @@ public class Staff extends User{
         System.out.println("I am a Staff");
     }
 
-    protected void postReview() {
-        System.out.println("Staff called postReview");
+    protected Review postReview() {
+        System.out.println("Staff posted review");
+        Review review = super.postReview();
+        review.setApproved(true);
+        return review;
     }
 }

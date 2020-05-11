@@ -6,11 +6,16 @@ public class User {
     }
 
     protected void saveWebLink() {
-        System.out.println("User saved weblink");
-        postReview();
+        System.out.println("User saved webLink");
+        System.out.println(postReview().isApproved());
     }
 
-    protected void postReview() {
+    protected Review postReview() {
         System.out.println("User posted review");
+        return new Review("Sample review");
+    }
+
+    public String toString() {
+        return "\nPrinting User info such as.";
     }
 }

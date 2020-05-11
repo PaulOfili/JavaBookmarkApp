@@ -1,5 +1,7 @@
 package com.paulofili;
 
+import java.util.List;
+
 public class UserTest {
     private void testUserType(User user) {
         user.printUserType();
